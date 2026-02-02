@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.agb-content {
+    background: white;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.agb-content h1 {
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.agb-section {
+    margin-bottom: 30px;
+}
+
+.agb-section h2 {
+    color: #667eea;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.agb-section p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.agb-section ul {
+    margin-left: 20px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.agb-section li {
+    margin-bottom: 8px;
+}
+
+.close-btn {
+    display: block;
+    margin: 30px auto 0;
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.close-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+@media (max-width: 600px) {
+    .agb-content {
+        padding: 20px;
+    }
+
+    .agb-content h1 {
+        font-size: 24px;
+    }
+
+    .agb-section h2 {
+        font-size: 18px;
+    }
+}

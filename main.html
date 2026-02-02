@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startseite</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Dashboard</h1>
+            <button id="logoutBtn" class="logout-btn">Logout</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Welcome Card -->
+        <div class="welcome-card">
+            <h2 id="welcomeText">Willkommen!</h2>
+            <p>Sie sind erfolgreich angemeldet.</p>
+            <div id="userInfo" class="user-info"></div>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="stats-section">
+            <div class="stat-card">
+                <h3>Profil Vollständig</h3>
+                <p id="profileComplete" class="stat-value">100%</p>
+            </div>
+            <div class="stat-card">
+                <h3>Anmeldungen</h3>
+                <p id="loginCount" class="stat-value">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Letzter Login</h3>
+                <p id="lastLogin" class="stat-value">Heute</p>
+            </div>
+        </div>
+
+        <!-- Settings Section -->
+        <div class="settings-section">
+            <div class="settings-card">
+                <h3>Einstellungen</h3>
+                <form id="settingsForm">
+                    <div class="form-group">
+                        <label for="theme">Design:</label>
+                        <select id="theme" name="theme">
+                            <option value="light">Hell</option>
+                            <option value="dark">Dunkel</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="notifications">Benachrichtigungen:</label>
+                        <input type="checkbox" id="notifications" name="notifications" checked>
+                        <label for="notifications" class="checkbox-label">Aktiviert</label>
+                    </div>
+                    <button type="submit" class="btn-save">Speichern</button>
+                </form>
+            </div>
+
+            <div class="info-card">
+                <h3>Informationen</h3>
+                <p>Willkommen auf Ihrem persönlichen Dashboard. Hier können Sie Ihre Einstellungen verwalten und wichtige Informationen einsehen.</p>
+            </div>
+        </div>
+
+        <!-- Change Password Section -->
+        <div class="password-section">
+            <div class="password-card">
+                <h3>Passwort ändern</h3>
+                <form id="passwordForm">
+                    <div class="form-group">
+                        <label for="oldPassword">Aktuelles Passwort:</label>
+                        <input type="password" id="oldPassword" name="oldPassword" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="newPassword">Neues Passwort:</label>
+                        <input type="password" id="newPassword" name="newPassword" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Passwort bestätigen:</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    </div>
+                    <button type="submit" class="btn-save">Passwort ändern</button>
+                </form>
+                <div id="passwordMessage" class="message"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
